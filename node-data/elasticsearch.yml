@@ -10,7 +10,7 @@ node:
 cloud:
   k8s:
     service: elasticsearch-discovery
-    namespace: default
+    namespace: kube-system
 discovery:
   type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
   zen:

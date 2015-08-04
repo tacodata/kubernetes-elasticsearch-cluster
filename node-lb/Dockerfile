@@ -1,4 +1,4 @@
-FROM pires/elasticsearch:base
+FROM tacodata/elasticsearch:base
 
 MAINTAINER pjpires@gmail.com
 
