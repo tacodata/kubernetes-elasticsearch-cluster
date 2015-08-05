@@ -1,5 +1,5 @@
 cluster:
-  name: elasticsearch-k8s
+  name: elasticsearchk8s
 
 # You want this node to be neither master nor data node, but
 # to act as a "search load balancer" (fetching data from nodes,
@@ -10,7 +10,7 @@ node:
 
 cloud:
   k8s:
-    service: elasticsearch-discovery
+    service: elasticsearchdiscovery
     namespace: kube-system
 discovery:
   type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule

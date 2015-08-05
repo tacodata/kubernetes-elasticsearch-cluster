@@ -1,5 +1,5 @@
 cluster:
-  name: elasticsearch-k8s
+  name: elasticsearchk8s
 
 # You want this node to only serve as a master: to not store any data and
 # to have free resources. This will be the "coordinator" of your cluster.
@@ -9,7 +9,7 @@ node:
 
 cloud:
   k8s:
-    service: elasticsearch-discovery
+    service: elasticsearchdiscovery
     namespace: kube-system
 discovery:
   type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule

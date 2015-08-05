@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: elasticsearch-master
+  name: elasticsearchmaster
   namespace: kube-system
   labels:
     component: elasticsearch
@@ -19,8 +19,8 @@ spec:
     spec:
       serviceAccount: elasticsearch
       containers:
-      - name: elasticsearch-master
-        image: pires/elasticsearch:master
+      - name: elasticsearchmaster
+        image: tacodata/elasticsearch:master
         env:
         - name: KUBERNETES_TRUST_CERT
           value: "true"
